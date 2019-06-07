@@ -1,10 +1,7 @@
 .header-content {
-	margin-top:60px;
 
 	&__left {
-		width: 75%;
-		float: left;
-		display: inline-block;
+		padding: 0;
 		position: relative;
 	}
 
@@ -13,19 +10,31 @@
 	}
 
 	&__box {
-		width: 500px;
+		width: 50%;
 		background-color: $white;
 		position: absolute;
 		bottom: 0;
 		right: 0;
 		padding: 10px 20px;
+		box-sizing: border-box;
 	}
 
 	&__box-text {
-		display: inline-block;
-		width: 30%;
 		font-size: 16px;
 		box-sizing: border-box;
+		margin-left: 15px;
+
+		&--medium {
+			width: 35%;
+		}
+
+		&--small {
+			width: 20%;
+		}
+
+		&--big {
+			width: 45%;
+		}
 	}
 
 	&__box-value {
@@ -34,10 +43,9 @@
 	}
 
 	&__right {
-		width: 25%;
-		float: left;
-		padding-top: 5%;
-		padding-left: 5%;	
+		position: relative;
+		display: flex;	
+		justify-content: center;
 	}
 
 	&__title {
@@ -46,5 +54,18 @@
 
 	&__subtitle {
 		font-size: $large;
+	}
+
+	&__arrow-box {
+		width: 144px;
+		height: 144px;
+		background-color: $flame;
+		position: absolute;
+		bottom: 25px;
+		left: -20px;
+		box-shadow: 20px 25px $coral;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }

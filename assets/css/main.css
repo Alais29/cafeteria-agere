@@ -9750,17 +9750,8 @@ img {
  * @since 1.0
  *
  */
-.bg-white {
-  background-color: #fff;
-}
-
-.header-content {
-  margin-top: 60px;
-}
 .header-content__left {
-  width: 75%;
-  float: left;
-  display: inline-block;
+  padding: 0;
   position: relative;
 }
 .header-content__image {
@@ -9773,22 +9764,30 @@ img {
   bottom: 0;
   right: 0;
   padding: 10px 20px;
+  box-sizing: border-box;
 }
 .header-content__box-text {
-  display: inline-block;
-  width: 30%;
   font-size: 16px;
   box-sizing: border-box;
+  margin-left: 15px;
+}
+.header-content__box-text--medium {
+  width: 35%;
+}
+.header-content__box-text--small {
+  width: 20%;
+}
+.header-content__box-text--big {
+  width: 45%;
 }
 .header-content__box-value {
   display: block;
   font-size: 40px;
 }
 .header-content__right {
-  width: 25%;
-  float: left;
-  padding-top: 5%;
-  padding-left: 5%;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 .header-content__title {
   font-size: 70px;
@@ -9796,9 +9795,58 @@ img {
 .header-content__subtitle {
   font-size: 18px;
 }
+.header-content__arrow-box {
+  width: 144px;
+  height: 144px;
+  background-color: #e4572e;
+  position: absolute;
+  bottom: 25px;
+  left: -20px;
+  box-shadow: 20px 25px #EACB31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .main-content__left-content {
-  clear: left;
+  display: flex;
+  align-items: center;
+  padding-right: 6rem;
+}
+.main-content__title {
+  font-size: 30px;
+}
+.main-content__middle-content, .main-content__right-content {
+  padding: 0;
+}
+.main-content__middle-content {
+  width: 100%;
+  min-height: 350px;
+  position: relative;
+}
+.main-content__blue-box {
+  width: 100%;
+  min-height: 300px;
+  background-color: #3c91e6;
+}
+.main-content__img-map {
+  position: absolute;
+  top: 60px;
+  left: -110px;
+}
+.main-content__img-coffee {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  object-fit: cover;
+  width: 23%;
+  height: 55%;
+  z-index: 1;
+}
+.main-content__right-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /*
