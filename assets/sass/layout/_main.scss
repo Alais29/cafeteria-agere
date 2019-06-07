@@ -4,6 +4,11 @@
 		display: flex;
 		align-items: center;
 		padding-right: 6rem;
+
+		@media (max-width: 767.98px) {
+			padding-top: 1rem;
+			padding-bottom: 1rem;	
+		}
 	}
 
 	&__title {
@@ -19,6 +24,10 @@
 		width: 100%;
 		min-height: 350px;
 		position: relative;
+
+		@media (max-width: 575.98px) {
+			min-height: 100%;
+		}
 	}
 
 	&__blue-box {
@@ -31,6 +40,7 @@
 		position: absolute;
 		top: 60px;
 		left: -110px;
+		z-index: 1;
 	}
 
 	&__img-coffee {
@@ -40,7 +50,11 @@
 		object-fit: cover;
 		width: 23%;
 		height: 55%;
-		z-index: 1;
+		z-index: 2;
+
+		@media (max-width: 991.98px) {
+			right: 0;
+		}
 	}
 
 	&__right-img {
