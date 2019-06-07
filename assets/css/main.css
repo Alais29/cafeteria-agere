@@ -9735,6 +9735,11 @@ img {
   max-width: 100%;
 }
 
+body {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /*
  *
  * Esta carpeta contiene todo lo que hace relación con el sitio web o la aplicación.
@@ -9788,6 +9793,9 @@ img {
   position: relative;
   display: flex;
   justify-content: center;
+}
+.header-content__text {
+  padding-top: 3em;
 }
 .header-content__title {
   font-size: 70px;
@@ -9866,5 +9874,28 @@ img {
  * @since 1.0
  *
  */
+.button--primary,
+.button--secondary {
+  border-radius: 0;
+}
+
+.button--primary {
+  border: solid 1px #989797;
+  color: #989797;
+}
+.button--primary:hover {
+  border: solid 1px #000;
+  color: #000;
+  background-color: #fff;
+}
+
+.button--secondary {
+  border: solid 1px #4ca866;
+  background-color: #4ca866;
+}
+.button--secondary:hover {
+  border: solid 1px #9dcfab;
+  background-color: #9dcfab;
+}
 
 /*# sourceMappingURL=main.css.map */
